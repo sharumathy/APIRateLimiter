@@ -11,7 +11,7 @@ public class ApiRateLimitingService {
 @Autowired
     private RedisTemplate<String, Integer> redisTemplate;
 
-    private final int MAX_REQUESTS = 100;
+    private final int MAX_REQUESTS = 10;
     private final long WINDOW = 15 * 60; // 15 minutes in seconds
 
     public boolean isAllowed(String userId) {
