@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
+import org.springframework.web.filter.OncePerRequestFilter;
 
 import com.example.APIRateLimiter.service.ApiRateLimitingService;
 
@@ -14,7 +15,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 @Component
-public class ApiRateLimitingFilter {
+public class ApiRateLimitingFilter extends OncePerRequestFilter{
 @Autowired
     private ApiRateLimitingService apiRateLimitingService;
 
