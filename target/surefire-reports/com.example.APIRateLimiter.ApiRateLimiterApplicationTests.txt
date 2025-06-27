@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.example.APIRateLimiter.ApiRateLimiterApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.436 s -- in com.example.APIRateLimiter.ApiRateLimiterApplicationTests
